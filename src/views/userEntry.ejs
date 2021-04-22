@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Registro Entrada</title>
+  </head>
+  
+  <tbody>
+    <h1>Bienvenido <%=userActive%> </h1>
+	<form action="/userEntry/<%=user%>" method="post">
+    Description:<br>
+  	<input type="text" name="description" placeholder="description" required><br>
+  	Date:<br>
+  	<input type="date" id="start" name="date"
+       value="2018-07-22"
+       min="2000-01-01" max="2030-12-31" required ><br>
+  	
+  	<input href="/regEntry/" type="submit" value="Registrar Entrada">
+	</form>
+    <br>
+	<form action="/login" method="post">
+		<a href="/login"> Log Out </a>
+	</form>
+  </tbody>
+</html>
